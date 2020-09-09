@@ -1,1 +1,1 @@
-# mobile_apps_f20
+# Mobile App Development Fall 2020
