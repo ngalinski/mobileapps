@@ -4,9 +4,20 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="third_fragment_label">Click Message Fragment</string>
     <string name="next">About</string>
     <string name="previous">Previous</string>
+    <string name="buttons">Message Buttons</string>
 
     <string name="hello_first_fragment">Hello World!</string>
     <string name="hello_second_fragment">Nicholas Galinski - galinski.n@northeastern.edu</string>
+
+    <!--  button labels  -->
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="pressed">Pressed:</string>
 </resources>
