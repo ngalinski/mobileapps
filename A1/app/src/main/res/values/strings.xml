@@ -5,6 +5,7 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="third_fragment_label">Click Message Fragment</string>
+    <string name="link_collector_label">Link Collector</string>
     <string name="next">About</string>
     <string name="previous">Previous</string>
     <string name="buttons">Message Buttons</string>

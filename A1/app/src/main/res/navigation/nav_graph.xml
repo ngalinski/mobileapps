@@ -18,6 +18,10 @@
             android:id="@+id/action_FirstFragment_to_MessageFragment"
             app:destination="@id/ThirdFragment"
             />
+        <action
+            android:id="@+id/action_FirstFragment_to_LinkFragment"
+            app:destination="@+id/LinkCollectorFragment"
+            />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -36,6 +40,15 @@
         tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_MessageFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LinkCollectorFragment"
+        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.LinkCollectorFragment"
+        android:label="@string/link_collector_label"
+        tools:layout="@layout/fragment_link">
+        <action
+            android:id="@+id/action_LinkFragment_to_FirstFragment"
             app:destination="@+id/FirstFragment" />
     </fragment>
 </navigation>
