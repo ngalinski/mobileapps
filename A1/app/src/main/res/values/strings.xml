@@ -21,4 +21,14 @@
     <string name="e">E</string>
     <string name="f">F</string>
     <string name="pressed">Pressed:</string>
+    
+    <!-- link strings -->
+    <string name="link">Link</string>
+    <string name="description">Description</string>
+    <string name="add_link">Add a link</string>
+    <string name="link_name">Name</string>
+    <string name="link_content">Hyperlink here</string>
+    <string name="link_add_btn">Add</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="invalid_link">Enter link again</string>
 </resources>
