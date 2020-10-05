@@ -3,12 +3,10 @@ package edu.neu.madcourse.numad20f_nicholasgalinski;
 public class LinkItem {
     private String linkName;
     private String linkURL;
-    private boolean isChecked;
 
-    public LinkItem(String linkName, String linkURL, boolean isChecked) {
+    public LinkItem(String linkName, String linkURL) {
         this.linkName = linkName;
         this.linkURL = linkURL;
-        this.isChecked = isChecked;
     }
 
     public String getName() {
@@ -25,29 +23,5 @@ public class LinkItem {
 
     public void setLinkURL() {
         this.linkURL = linkURL;
-    }
-
-    public boolean getStatus() {
-        return isChecked;
-    }
-
-    public void onCardClicked(boolean misChecked, String name) {
-        isChecked = misChecked;
-        if (isChecked) {
-            linkName = name;
-        }
-        else {
-            linkName = "Example item";
-        }
-    }
-
-    public void onCheckboxClicked(boolean misChecked, String name) {
-        isChecked = misChecked;
-        if (isChecked) {
-            linkName = name;
-        }
-        else {
-            linkName = "Example item";
-        }
     }
 }

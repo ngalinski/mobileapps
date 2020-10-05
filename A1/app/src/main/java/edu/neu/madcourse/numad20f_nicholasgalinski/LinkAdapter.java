@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.CheckBox;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,19 +26,16 @@ public class LinkAdapter extends RecyclerView.Adapter<LinkAdapter.LinkViewHolder
 
     public interface LinkItemListener {
         void onItemClick(int pos);
-        void onCheckBoxClick(int position);
     }
 
     public static class LinkViewHolder extends RecyclerView.ViewHolder{
         public TextView linkName;
         public TextView linkContent;
-        public CheckBox checkBox;
 
         public LinkViewHolder(@NonNull View itemView, final LinkItemListener listener) {
             super(itemView);
             linkContent = itemView.findViewById(R.id.link_content);
             linkName = itemView.findViewById(R.id.link_name);
-            checkBox = itemView.findViewById(R.id.checkbox);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -48,17 +44,6 @@ public class LinkAdapter extends RecyclerView.Adapter<LinkAdapter.LinkViewHolder
                         int pos = getLayoutPosition();
                         if (pos != RecyclerView.NO_POSITION) {
                             listener.onItemClick(pos);
-                        }
-                    }
-                }
-            });
-            checkBox.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (listener != null) {
-                        int position = getLayoutPosition();
-                        if (position != RecyclerView.NO_POSITION) {
-                            listener.onCheckBoxClick(position);
                         }
                     }
                 }
@@ -79,7 +64,6 @@ public class LinkAdapter extends RecyclerView.Adapter<LinkAdapter.LinkViewHolder
         LinkItem linkItem = linkItems.get(position);
         holder.linkName.setText(linkItem.getName());
         holder.linkContent.setText(linkItem.getLinkURL());
-        holder.checkBox.setChecked(linkItem.getStatus());
     }
 
     @Override
