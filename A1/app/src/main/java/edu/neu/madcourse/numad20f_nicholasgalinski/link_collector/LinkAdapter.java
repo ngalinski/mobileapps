@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import edu.neu.madcourse.numad20f_nicholasgalinski.R;
-import edu.neu.madcourse.numad20f_nicholasgalinski.link_collector.LinkItem;
 
 public class LinkAdapter extends RecyclerView.Adapter<LinkAdapter.LinkViewHolder> {
     private List<LinkItem> linkItems;
@@ -37,8 +36,8 @@ public class LinkAdapter extends RecyclerView.Adapter<LinkAdapter.LinkViewHolder
 
         public LinkViewHolder(@NonNull View itemView, final LinkItemListener listener) {
             super(itemView);
-            linkContent = itemView.findViewById(R.id.link_content);
-            linkName = itemView.findViewById(R.id.link_name);
+            linkContent = itemView.findViewById(R.id.edit_link);
+            linkName = itemView.findViewById(R.id.edit_name);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

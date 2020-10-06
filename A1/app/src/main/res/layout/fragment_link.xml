@@ -5,24 +5,20 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/edit_link"
+        android:id="@+id/edit_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="3dp"
-        android:hint="@string/link"
+        android:hint="@string/link_name"
         android:importantForAutofill="no"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/edit_name"
+        android:id="@+id/edit_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_link"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="3dp"
-        android:hint="@string/link_name"
+        android:hint="@string/link"
         android:importantForAutofill="no"
         android:inputType="text" />
 </LinearLayout>
