@@ -1,4 +1,4 @@
-package edu.neu.madcourse.numad20f_nicholasgalinski;
+package edu.neu.madcourse.numad20f_nicholasgalinski.link_collector;
 
 public class LinkItem {
     private String linkName;

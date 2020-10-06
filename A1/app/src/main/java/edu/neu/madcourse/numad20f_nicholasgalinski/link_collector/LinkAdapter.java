@@ -1,6 +1,6 @@
 // code started from RvAdapter sample code file
 
-package edu.neu.madcourse.numad20f_nicholasgalinski;
+package edu.neu.madcourse.numad20f_nicholasgalinski.link_collector;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import edu.neu.madcourse.numad20f_nicholasgalinski.R;
+import edu.neu.madcourse.numad20f_nicholasgalinski.link_collector.LinkItem;
 
 public class LinkAdapter extends RecyclerView.Adapter<LinkAdapter.LinkViewHolder> {
     private List<LinkItem> linkItems;
@@ -54,7 +57,7 @@ public class LinkAdapter extends RecyclerView.Adapter<LinkAdapter.LinkViewHolder
     @NonNull
     @Override
     public LinkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_link_list,
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_link,
                 parent, false);
         return new LinkViewHolder(view, itemListener);
     }
