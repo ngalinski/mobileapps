@@ -31,4 +31,5 @@
     <string name="link_add_btn">Add</string>
     <string name="cancel_btn">Cancel</string>
     <string name="invalid_link">Enter link again</string>
+    <string name="about_text">Nicholas Galinski - galinski.n@northeastern.edu</string>
 </resources>

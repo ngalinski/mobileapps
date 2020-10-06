@@ -25,7 +25,7 @@ public class DialogueFragment extends DialogFragment {
     private static final  String SAVED_NAME = "saved_name";
     private static final String SAVED_LINK = "saved_link";
 
-    public static final DialogueFragment newInstance(String name, String link) {
+    public static DialogueFragment newInstance(String name, String link) {
 
         DialogueFragment fragment = new DialogueFragment();
         Bundle args = new Bundle(2);
@@ -71,7 +71,7 @@ public class DialogueFragment extends DialogFragment {
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         listener = (AddLinkDialogListener) context;
     }

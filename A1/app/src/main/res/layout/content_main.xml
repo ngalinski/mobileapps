@@ -34,7 +34,7 @@
         android:id="@+id/about_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nicholas Galinski - galinski.n@northeastern.edu"
+        android:text="@string/about_text"
         android:textSize="14sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
