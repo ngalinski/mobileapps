@@ -1,5 +1,6 @@
 package edu.neu.madcourse.numad20f_nicholasgalinski;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,6 +13,9 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import edu.neu.madcourse.numad20f_nicholasgalinski.link_collector.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void aboutText(View v) {
+        TextView t = findViewById(R.id.about_text);
+        if (t.getVisibility() == View.VISIBLE) {
+            t.setVisibility(View.GONE);
+        } else {
+            t.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -55,12 +68,25 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+/*
     public static String getPressedText() {
         return pressedText;
     }
 
     public static void setPressedText(String textToSet) {
         pressedText = textToSet;
+    }
+*/
+    public void onClick(View v) {
+        switch (v.getId()) {
+
+            case R.id.button_third:
+                Intent intent = new Intent(MainActivity.this, ClickMessageFragment.class);
+                startActivity(intent);
+                break;
+            case R.id.link_collector:
+                startActivity(new Intent(MainActivity.this, LinkCollectorFragment.class));
+                break;
+        }
     }
 }
