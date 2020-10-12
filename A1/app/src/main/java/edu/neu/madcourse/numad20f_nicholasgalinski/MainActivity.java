@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import edu.neu.madcourse.numad20f_nicholasgalinski.link_collector.*;
+import edu.neu.madcourse.numad20f_nicholasgalinski.locator.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -86,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.link_collector:
                 startActivity(new Intent(MainActivity.this, LinkCollectorFragment.class));
+                break;
+            case R.id.button_locator:
+                startActivity(new Intent(MainActivity.this, LocatorFragment.class));
                 break;
         }
     }

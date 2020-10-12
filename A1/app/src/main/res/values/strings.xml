@@ -13,6 +13,14 @@
     <string name="hello_first_fragment">Hello World!</string>
     <string name="hello_second_fragment">Nicholas Galinski - galinski.n@northeastern.edu</string>
 
+    <string name="locator_fragment_label">Locator Fragment</string>
+    <string name="lat">Latitude:</string>
+    <string name="lng">Longitude</string>
+    <string name="locator_string">Locator</string>
+    <string name="accept">Accept</string>
+    <string name="denied">Denied permission.</string>
+    <string name="btn_again">Try Again</string>
+
     <!--  button labels  -->
     <string name="a">A</string>
     <string name="b">B</string>

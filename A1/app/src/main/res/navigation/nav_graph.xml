@@ -7,16 +7,16 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.FirstFragment"
+        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.MainActivity"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/activity_main">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/ClickMessageFragment" />
         <action
             android:id="@+id/action_FirstFragment_to_MessageFragment"
-            app:destination="@id/ThirdFragment"
+            app:destination="@id/LocatorFragment"
             />
         <action
             android:id="@+id/action_FirstFragment_to_LinkFragment"
@@ -24,31 +24,31 @@
             />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.SecondFragment"
+        android:id="@+id/ClickMessageFragment"
+        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.ClickMessageFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/activity_click">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
-        android:id="@+id/ThirdFragment"
-        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.ClickMessageFragment"
-        android:label="@string/third_fragment_label"
-        tools:layout="@layout/fragment_third">
-        <action
-            android:id="@+id/action_MessageFragment_to_FirstFragment"
-            app:destination="@+id/FirstFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/LinkCollectorFragment"
-        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.LinkCollectorFragment"
+        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.link_collector.LinkCollectorFragment"
         android:label="@string/link_collector_label"
         tools:layout="@layout/fragment_link">
         <action
             android:id="@+id/action_LinkFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LocatorFragment"
+        android:name="edu.neu.madcourse.numad20f_nicholasgalinski.locator.LocatorFragment"
+        android:label="@string/locator_fragment_label"
+        tools:layout="@layout/fragment_locator">
+        <action
+            android:id="@+id/action_MessageFragment_to_FirstFragment"
             app:destination="@+id/FirstFragment" />
     </fragment>
 </navigation>
