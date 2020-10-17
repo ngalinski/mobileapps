@@ -40,4 +40,7 @@
     <string name="cancel_btn">Cancel</string>
     <string name="invalid_link">Enter link again</string>
     <string name="about_text">Nicholas Galinski - galinski.n@northeastern.edu</string>
+
+    <!-- at your service -->
+    <string name="at_yr_srvc_str">At Your Service</string>
 </resources>

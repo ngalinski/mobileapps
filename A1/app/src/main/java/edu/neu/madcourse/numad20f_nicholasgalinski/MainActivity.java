@@ -91,6 +91,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_locator:
                 startActivity(new Intent(MainActivity.this, LocatorFragment.class));
                 break;
+            case R.id.button_service:
+                startActivity(new Intent(MainActivity.this, AtYourServiceFragment.class));
+                break;
         }
     }
 }
