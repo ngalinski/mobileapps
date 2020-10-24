@@ -43,4 +43,10 @@
 
     <!-- at your service -->
     <string name="at_yr_srvc_str">At Your Service</string>
+    <string name="srvc_info">Get location info from a zip code</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="send_btn">Send</string>
+    <string name="broken_response">Web Service Connection Failed.</string>
+    <string name="test_btn">Test</string>
+    <string name="test_info">Click \"Test\" to test zip code \"90210\" in the API.</string>
 </resources>
