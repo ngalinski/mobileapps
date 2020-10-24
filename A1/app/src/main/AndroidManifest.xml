@@ -12,9 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_ng_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".link_collector.LinkCollectorFragment"></activity>
-        <activity android:name=".locator.LocatorFragment"></activity>
+        <activity android:name=".link_collector.LinkCollectorFragment"/>
+        <activity android:name=".locator.LocatorFragment"/>
         <activity android:name=".ClickMessageFragment"/>
+        <activity android:name=".service.AtYourServiceFragment"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
