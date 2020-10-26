@@ -8,8 +8,8 @@ android {
         applicationId "edu.neu.madcourse.numad20f_nicholasgalinski"
         minSdkVersion 27
         targetSdkVersion 30
-        versionCode 4
-        versionName "2.2"
+        versionCode 5
+        versionName "2.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
