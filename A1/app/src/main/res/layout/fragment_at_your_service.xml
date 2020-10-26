@@ -1,103 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AtYourServiceFragment" >
+    tools:context="edu.neu.madcourse.numad20f_nicholasgalinski.service.AtYourServiceFragment"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp"/>
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_height="wrap_content"
+        android:id="@+id/quote_srvc"
+        android:text="@string/random_quote"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/URL_editText"
+        android:text="@string/quote_url"
+        android:textSize="20dp"/>
 
-            <TextView
-                android:id="@+id/srvc_top"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/srvc_info"
-                android:textAlignment="center"
-                android:textStyle="bold" />
+    <Button
+        android:id="@+id/visit_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callWebserviceButtonHandler"
+        android:text="@string/visit_web" />
 
-            <EditText
-                android:id="@+id/zip_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/zip_code"
-                android:inputType="none"
-                android:textAlignment="center" />
+    <Button
+        android:id="@+id/get_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_quote" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+    <TextView
+        android:id="@+id/result_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:background="@color/colorGray"
+        android:fontFamily="casual"
+        android:singleLine="false"
+        android:text=""
+        app:autoSizeTextType="uniform"/>
 
-                <Button
-                    android:id="@+id/send_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="send"
-                    android:text="@string/send_btn"
-                    android:textAllCaps="false" />
+    <Button
+        android:id="@+id/get_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_author" />
 
-                <Button
-                    android:id="@+id/test_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="testApi"
-                    android:text="@string/test_btn"
-                    android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/quote_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:background="@color/colorGray"
+        android:fontFamily="casual"
+        android:singleLine="false"
+        android:text=""
+        app:autoSizeTextType="uniform"/>
 
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/test_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:text="@string/test_info" />
-
-            <ProgressBar
-                android:id="@+id/progressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="invisible" />
-
-            <TextView
-                android:id="@+id/disconnected"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:text="@string/broken_response"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/location_print"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:singleLine="false" />
-        </LinearLayout>
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
